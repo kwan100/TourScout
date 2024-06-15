@@ -1,0 +1,715 @@
+body {
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-y: scroll;
+  letter-spacing: -0.2px;
+}
+
+.home-title {
+  font-size: 3.25vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+.artist{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+#artist-background{
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 33vh;
+  position: relative;
+}
+
+@media(max-width: 576px) {
+  #home-logo {
+    height: 14vh !important;
+  }
+
+  .home-title {
+    font-size: 15px;
+  }
+
+  #no-sidebar-sm {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .card-title {
+    font-size: 18px !important;
+  }
+
+  .search{
+    width: 75% !important;
+    margin-left: 12.5% !important;
+  }
+
+  .search button img {
+    margin-bottom: 5px !important;
+  }
+
+  .social-media-icon img {
+    width: 38px !important;
+  }
+
+  #artist-background{
+    background-position: -150px 0 !important;
+  }
+
+  #mobile-wrapper {
+    overflow-x: hidden !important;
+    position: relative !important;
+  }
+
+  #text-contain {
+    bottom: 0% !important;
+    left: 0% !important;
+    padding-bottom: 4%;;
+    padding-left: 4%;
+    padding-right: 65%;
+    padding-top: 75%;
+  }
+
+  #artist-name {
+    margin: 0 auto !important;
+    width: 150%;
+  }
+
+  .carousel-control-prev{
+    padding-right: 2.5% !important;
+  }
+  
+  .carousel-control-next{
+    padding-left: 2.5% !important;
+  } 
+
+  #gallery {
+    margin-top: 30px !important;
+  }
+
+  #homepage #gallery {
+    margin-top: 40px !important;
+  }
+
+  .file {
+    padding-top: 3px;
+  }
+}
+
+/* Schedule */
+
+.show-location {
+  text-align: left;
+}
+
+.shows {
+  width: 100%;
+}
+
+.shows a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.show {
+  border-bottom: 1px solid #c8c9ca;
+}
+
+#upcoming-btn, #past-btn {
+  font-size: 15px;
+  border: none;
+  background-color: inherit;
+  text-decoration: underline;
+}
+
+.social-media-icon{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.btn-outline-light:hover, .btn-outline-light:active, .dropdown:hover, .dropdown:active {
+  filter: brightness(93%);
+  transition-duration: 0.4s;
+}
+
+.social-media-icon:hover, .card img:hover {
+  filter: brightness(70%);
+  transition-duration: 0.4s;
+}
+
+#arrow:hover {
+  opacity: 0.85;
+  transition-duration: 0.4s;
+}
+
+#show-row:hover {
+  background-color: #e7e8e8;
+  transition-duration: 0.4s;
+}
+
+.btn-dark {
+  transition-duration: 0.4s;
+}
+
+.carousel-control-prev{
+  padding-right: 10%;
+}
+
+.carousel-control-next{
+  padding-left: 10%;
+}
+
+.card-title {
+  font-size: 1.5vw;
+}
+
+.card-body {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#homepage .card-body {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+#result-wrapper .card-body {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: sticky;
+  top: 52px;
+  width: 24%;
+  float: right;
+  margin-right: 4%;
+  padding-top: 25px;
+}
+
+.no-sidebar {
+  width: 67.5%;
+  margin-left: 3%;
+  margin-right: 1.5%;
+}
+
+#upcoming {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#upcoming-shows {
+  margin-bottom: 20px;
+}
+
+.schedule-font {
+  font-size: 13px;
+}
+
+.schedule-subfont {
+  font-size: 12px;
+}
+
+.social-media-icon img {
+  border-radius: 50%;
+  width: 35px;
+}
+
+#upcoming-list {
+  margin-bottom: 63px;
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  clear: left;
+  float: left;
+  font-size: 18px;
+}
+
+#review .rating {
+  margin-bottom: 13px;
+  float: none;
+}
+
+#rating-text {
+  font-size: 15px;
+}
+
+.dropdown {
+  float: right;
+  padding-top: 25px;
+}
+
+.dropdown .form-select {
+  font-weight: bold;
+}
+
+#review .bottom{
+  padding-top: 30px;
+}
+
+#reviewbutton{
+  margin-top: 25px;
+  color: white;
+}
+
+#review h4 {
+  margin-bottom: 0;
+}
+
+/* Home page search bar */
+
+.search{
+  position: relative;
+  width: 60%;
+  margin-top: 25px;
+  margin-left: 20%;
+}
+
+.search input{
+  height: 45px;
+  text-indent: 15px;
+  border: 2px solid #c8c9ca;
+}
+
+.search button{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 35px;
+  width: 13%;
+  min-width: 40px;
+}
+
+.search button img {
+  height: 65%;
+  margin-bottom: 3px;
+}
+
+.search .form-control {
+  padding-left: 0;
+}
+
+/* Arist page search bar */
+
+.navsearch{
+  position: relative;
+  width: 40%;
+  right: 30%;
+}
+
+.navsearch input{
+  height: 37px;
+  font-size: 15px;
+  text-indent: 12px;
+  border: 2px solid #c8c9ca;
+}
+
+.navsearch button{
+  position: absolute;
+  top: 4.5px;
+  right: 4.5px;
+  height: 28px;
+  width: 50px;
+}
+
+.navsearch button img {
+  height: 90%;
+  margin-bottom: 11px;
+}
+
+.navsearch .form-control {
+  padding-left: 0;
+}
+
+#homepage{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?cs=srgb&dl=pexels-sebastian-ervi-1763075.jpg&fm=jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#homeheader
+{
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+#writebutton{
+  padding-top: 5px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#write-sm{
+  margin-top: 25px;
+  padding-top: 5px;
+  color: white;
+}
+
+#icon-sm {
+  margin-top: 25px;
+}
+
+#nav-logo {
+  height: 45px;
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+
+#home-logo {
+  height: 15vh;
+}
+
+#ontour {
+  padding-top: 12px;
+  font-size: 22px;
+}
+
+#arrow {
+  width: 35px;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+
+#review-icon {
+  width: 23px;
+  filter: invert(100%);
+}
+
+#camera-icon {
+  width: 27px;
+  padding-bottom: 2px;
+}
+
+/* Row Spacing */ 
+
+#gallery {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#homepage #gallery {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+  margin-top: 40px;
+  clear: left;
+}
+
+#review hr {
+  margin-top: 0px;
+}
+
+#reviews {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#reviews-margin {
+  margin-bottom: 25px;
+}
+
+#write-review {
+  margin-top: 30px;
+  margin-bottom: 10px !important; 
+}
+
+#write-a-review {
+  padding-left: 0;
+}
+
+.navbar {
+  height: 52px;
+  top: 0;
+  z-index: 1000;
+}
+
+#artist-nav {
+  position: sticky;
+}
+
+/* Sub-titles */
+
+h4 {
+  float: left;
+}
+
+#clear {
+  clear: left;
+}
+
+/* Add photo button */
+
+#add-photo {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.btn-outline-light {
+  color: black;
+  border: 1px solid #c8c9ca;
+}
+
+#photobutton:hover, #photobutton:active {
+  border-color: #c8c9ca;
+}
+
+.no-text-align {
+  text-align: end;
+}
+
+/* Artist Header */
+
+#text-contain {
+  position: absolute;
+  bottom: 15%;
+  left: 4%;
+}
+
+.MuiRating-sizeLarge {
+  font-size: 6.5vh !important;
+}
+
+#artist-name {
+  font-size: 6.5vh;
+  padding-left: 5px;
+}
+
+/* Results */
+
+.results {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+#result-wrapper a, #result-wrapper:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#result-wrapper {
+  padding-top: 5px;
+}
+
+/* Footer */
+
+footer {
+  float: left;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-size: 14px;
+  color: #525252;
+}
+
+#footer-logo {
+  height: 50px;
+  padding-bottom: 17px;
+  padding-right: 20px;
+  filter: invert(1);
+}
+
+#artist-footer {
+  margin-top: 25px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+#results-footer {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+small {
+  color: #525252;
+}
+
+.review-user {
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+#helpful-button, .dropdown .form-select {
+  border: 1px solid #c8c9ca !important;
+}
+
+#helpful-button {
+  width: 93px;
+  height: 35px;
+}
+
+#helpful {
+  padding-top: 2px;
+  padding-left: 15px;
+  font-size: 13px;
+}
+
+#helpful-icon {
+  width: 20px;
+  padding-bottom: 6px;
+}
+
+/* Home page artists */
+
+#homepage a {
+  text-decoration: none;
+  color: white;
+}
+
+select:focus {
+  box-shadow: none !important;
+}
+
+.form-select {
+  color: black;
+}
+
+.dropdown option {
+  font-weight: bold;
+}
+
+/* Model */
+
+.model {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 5%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.hide {
+  display: none;
+}
+
+.model img {
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  line-height: 0;
+  box-sizing: 20px 0 20px;
+  margin: 0 auto;
+}
+
+/* Event Dropdown */
+
+select:invalid {
+  color: #6c757d;
+}
+
+select:invalid option:not(:disabled) {
+  color: black;
+}
+
+
+/* Pagination */
+
+#page ul {
+  margin-bottom: 0 !important;
+}
+
+#page .item {
+  align-items: center;
+  color: #c8c9ca;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+
+#page .item a {
+  width: 100%;
+  height: 100%;
+}
+
+#page .disabled-page {
+  color: #c8c9ca;
+}
+
+#page .active {
+  color: black;
+}
+
+#page .next {
+  display: none;
+  font-size: 4px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  margin-right: 250px;
+}
+
+#page .pagination {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  justify-content: center;
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+}
+
+#page .pagination-page {
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.break-me {
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#page .previous {
+  display: none;
+  font-size: 4px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  margin-left: 250px;
+}
+
+.hidden {
+  display: none;
+}
+
+#stars {
+  padding-top: 5px;
+}
